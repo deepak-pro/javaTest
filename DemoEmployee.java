@@ -27,7 +27,8 @@ class Employee {
 
 class DemoEmployee {
 	public static void main(String[] args) {
-		// Gettings Records from user
+
+		//Take input from user
 		ArrayList<Employee> list = new ArrayList<Employee>();
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter the number of records you want to enter>");
@@ -51,8 +52,7 @@ class DemoEmployee {
 
 		}
 
-		// To show ALl the data to user
-
+		//Show All records
 		System.out.println("Do you want to show all records?[yes/no]") ;
 		String answer = scan.nextLine();
 		if(answer.equals("yes")) {
@@ -63,6 +63,7 @@ class DemoEmployee {
 			}
 		}
 
+		//Search for a record
 		System.out.print("Enter the code is you want to search>") ;
 		int searchCode = scan.nextInt();
 		System.out.println("Searching for " + searchCode) ;
