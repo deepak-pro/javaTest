@@ -19,16 +19,6 @@ class Employee {
 		return detail ;
 	}
 
-	Boolean increaseSalary(){
-		try{
-			this.salary = this.salary + (int)(this.salary * 0.1) ;
-			return true ;
-		}catch(Exception ex){
-			System.out.println("Error " + ex);
-			return false ;
-		}
-	}
-
 	int getId(){
 		return this.code ;
 	}
@@ -93,14 +83,6 @@ class DemoEmployee {
 			System.out.println("Record not found") ;
 		}
 
-		//Increase Salary
-		for(Employee e : list){
-			if (e.increaseSalary()) {
-				System.out.println("Salary Increased for Employee " + e.name);
-				System.out.println("New Data is \n" + e) ;
-			}else{
-				System.out.println("There was an error while updating salary.") ;
-			}
-		}
+
 	}
 }
